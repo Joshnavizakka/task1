@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 UI Project</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Brand</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              Contact
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Address</a>
+              <a class="dropdown-item" href="#">Telephone</a>
+            </div>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<main class="py-5">
+
+  <div class="container">
+    <div class="row g-4">
+
+      
+      <div class="col-md-8">
+
+        <section class="mb-5">
+          <h2>Joo Fashions</h2>
+          <p>
+            👚 Wide Apparel Collection
+
+Women’s Fashion: Dresses, tops, skirts, ethnic wear, party outfits
+
+Men’s Wear: Shirts, T-shirts, casuals, semi-formal
+
+Accessories: Bags, belts, scarves, jewelry
+          </p>
+        </section>
+
+        
+        <section class="mb-5">
+          <h4>Contact Us</h4>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="abc@mail.com">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </section>
+
+        
+        <section>
+          <div class="card">
+            <img src="data:image/png;base64,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" class="card-img-top" alt="Our structure">
+            <div class="card-body">
+              <h5 class="card-title">Our Structure</h5>
+              <p class="card-text">
+                JO Feminine logo beauty monogram and elegant logo design, handwriting logo of initial signature, wedding, fashion, floral and botanical with creative template.
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      
+      <div class="col-md-4">
+        <h3>News</h3>
+        <ul class="list-group mb-4">
+          <li class="list-group-item">About Us
+
+Welcome to Joo Fashions, your ultimate destination for stylish, high-quality apparel and accessories for all occasions. At Joo Fashions, we believe fashion should be comfortable, expressive, and accessible to everyone. Our collections are curated to bring you the latest trends without compromising on comfort or craftsmanship.</li>
+
+          <li class="list-group-item">✨ Our Mission
+To empower individuals to express their unique style with confidence through affordable, trendy, and premium-quality fashion.</li>
+
+          <li class="list-group-item">✨ Our Vision
+To become a globally trusted fashion brand known for innovation, style, and customer delight.</li>
+      mind
+
+📞 Customer Support
+
+Need help with your order? Our dedicated support team is here to assist you with product inquiries, delivery tracking, and returns.
+
+📧 Email: support@joofashions.com
+
+📞 Phone: +91-XXXXXXXXXX (example)  </ul>
+
+    
+        <button
+          class="btn btn-primary w-100"
+          data-bs-toggle="modal"
+          data-bs-target="#subscribeModal"
+        >
+          Add to cart and subscribe
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<div
+  class="modal fade"
+  id="subscribeModal"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Subscribe</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Enter your email"
+        >
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-dark text-light text-center py-4">
+  <p class="mb-0">© 2025 Brand Name. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
